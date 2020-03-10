@@ -37,7 +37,7 @@ I use dependency Injection and repository pattern in this project .
 - Clone the .env.example file and rename it to .env
 - Config database information  in .env
 - Run "php artisan migrate" to generate DB schema
-- Run "php artisan db:seed" to seed db (create user **guest@cartrack.pt**  and password **1234** to login panel)
+- Run "php artisan db:seed" to seed db (create user **guest@cartrack.pt**  and password **1234** to login)
 - Run "php artisan jwt:secret"
 - Run "php artisan key:generate" to generate application key
 - Run "php artisan l5-swagger:generate" to generate API documentations
