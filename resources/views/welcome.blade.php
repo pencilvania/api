@@ -82,11 +82,11 @@
             <div class="content">
                 <div  class="title m-b-md">
                     <div class="title m-b-md">
-                        Super Hero
+                        CARTRACK API
                     </div>
 
                     <div class="links">
-                        <a href="{{ url('/api') }}">API DOCUMENTATION</a> | <a href="https://github.com/pencilvania/superhero">API Source</a>
+                        <a href="{{ url('/api') }}">API DOCUMENTATION</a> | <a href="https://github.com/pencilvania/api">API Source</a>
                     </div>
             </div>
         </div>
