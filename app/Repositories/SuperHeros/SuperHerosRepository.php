@@ -138,14 +138,14 @@ class SuperHerosRepository implements SuperHerosInterface
         if ($validator->fails()) {
             return response()->validation('problem in process', $validator->errors());
         }
-        try
-        {
+
         $record = $this->model->find($id);
+        if($record){
          $record->update($data);
         return $this->getById($id);
-        }catch (\Exception $e)
+        }else
         {
-            return response()->error('Not found exception',$e->getMessage());
+            return response()->error('Not found exception');
         }
     }
 }
