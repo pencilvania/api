@@ -222,7 +222,7 @@ return [
     |--------------------------------------------------------------------------
      */
     'constants' => [
-        'APP_NAME' => env('APP_NAME', 'aptoide'),
+        'APP_NAME' => env('APP_NAME', 'carTrack'),
         'L5_SWAGGER_CONST_HOST' => env('APP_URL', 'localhost:8000'),
     ],
 ];
