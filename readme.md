@@ -12,7 +12,7 @@ I use dependency Injection and repository pattern in this project .
 ## Important files
 
 * Entities
-    * `App\Abilities`
+    * `App\Affiliations`
     * `App\User` 
     * `App\Superheros`
  * Routes
@@ -37,11 +37,19 @@ I use dependency Injection and repository pattern in this project .
 - Clone the .env.example file and rename it to .env
 - Config database information  in .env
 - Run "php artisan migrate" to generate DB schema
-- Run "php artisan db:seed" to seed db (create user guest@cartrack.pt and password 1234 to login panel)
+- Run "php artisan db:seed" to seed db (create user **guest@cartrack.pt**  and password **1234** to login panel)
 - Run "php artisan jwt:secret"
 - Run "php artisan key:generate" to generate application key
 - Run "php artisan l5-swagger:generate" to generate API documentations
 - Run "php artisan serve" to start the server then go to localhost:8000 and enjoy
+
+## Usage
+
+for call services at first login with email and password at this endpoint
+- http://195.248.242.139:8181/api/auth/login [POST method]
+if your credential is OK you can see your Token in response and use your token in other services in header for instance :
+
+Authorization Bearer eyJ0eXAiOiJKV1QiLCJhb....
 
 ## Unit tests
 Run the unit tests with:
