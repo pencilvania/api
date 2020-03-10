@@ -41,7 +41,6 @@ I use dependency Injection and repository pattern in this project .
 - Run "php artisan jwt:secret"
 - Run "php artisan key:generate" to generate application key
 - Run "php artisan l5-swagger:generate" to generate API documentations
-- Run "php artisan storage:link" for save and show image
 - Run "php artisan serve" to start the server then go to localhost:8000 and enjoy
 
 ## Unit tests
