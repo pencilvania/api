@@ -32,8 +32,6 @@ class RepositoriesServiceProvider extends ServiceProvider
     public function boot()
     {
        $this->app->bind(SuperHerosInterface::class,SuperHerosRepository::class);
-        $this->app->bind(AbilitiesInterface::class,AbilitiesRepository::class);
         $this->app->bind(AffiliationsInterface::class,AffiliationsRepository::class);
-        $this->app->bind(HerosAbilitiesInterface::class,HerosAbilitiesRepository::class);
     }
 }
